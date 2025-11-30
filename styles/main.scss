@@ -11,9 +11,40 @@ $sun:rgba(216, 216, 216, 0.3);
 $star: rgba(255,235,59 ,0.8);
 $human: #8A716A; //dark grey
 
+.wish{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    > * {
+    margin: 0;
+    padding: 0;
+    line-height: 1; // Reduces space caused by line height
+    }
 
-.title{text-align: center;
-font-family: "Mountains of Christmas"}
+    h1, h3, p {
+        margin: 0;
+        padding: 0;
+        line-height: 1.2;
+    }
+    h3 {
+        margin-top: 0.5em;
+        margin-bottom: 0.1em;
+        font-family: "Mountains of Christmas"; 
+    }
+    .title{
+    text-align: center;
+    font-family: "Mountains of Christmas";
+    margin-bottom: -0.1em; 
+    }
+    #countdown {
+    margin-top: 0.5em;
+    font-size: 2em;
+    font-family: "Mountains of Christmas";
+    }
+}
 
 #footer a:link{color:black}
 #footer a:visited{color:black}
@@ -689,241 +720,4 @@ clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
     opacity: 1;
   }
 }
-// // Define colors
-// $background: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
-// $mountains: rgba(137, 43, 17, 0.8);
-// $roof: #BC1818; //red
-// $door: #BC3C18; //red-brown
-// $house: #C1B5B2; //grey
-// $window: #D8D8D8; //light-grey
-// $sun: rgba(216, 216, 216, 0.3);
-// $star: rgba(255, 235, 59, 0.8);
-// $human: #8A716A; //dark grey
-
-// $windowAnimationDuration: 3s;
-
-// // Global styles
-// body {
-//   background: $background;
-//   font-family: "Mountains of Christmas";
-// }
-
-// .box {
-//   position: relative;
-//   margin: auto;
-//   width: 630px;
-//   height: 460px;
-//   margin-top: 2%;
-// }
-
-// // Mountain styles
-// .mountains {
-//   position: absolute;
-//   background: $mountains;
-//   border-top: 25px solid white;
-//   width: 55%;
-//   height: 85%;
-
-//   // clippy tool - Triangle shape
-//   -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-//   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-
-//   &.mountains-1{
-//     top: 5%;
-//     left: 25%;
-//     width: 55%;
-//     height: 85%;
-//   }
-//   &.mountains-2{
-//     top: 35%; 
-//     left: 15%;
-//     width: 25%;
-//     height: 55%;
-//   }
-//   &.mountains-3{
-//     top: 30%; 
-//     right: 5%;
-//     width: 35%;
-//     height: 60%;
-//   }
-// } // End .mountains
-
-// .house{
-//   position: absolute;
-//   top: 65%;
-//   left: 35%;
-//   width: 32%;
-//   height: 35%;
-//   background: $house;
-// }
-
-// .window{
-//   position: absolute; 
-//   width: 14%; 
-//   height: 20%;
-//   background: $window;
-
-//   &.window-1 {
-//     top: 65%;
-//     left: 16%; 
-//     // Animation definition inside & of window-1
-//     -webkit-animation: window-1 2s linear 1s infinite both;
-//     animation: window-1 2s linear 1s infinite both;
-//   }
-  
-//   @keyframes window-1 {
-//     0%, 100% {
-//       opacity: 1;
-//     }
-//     41.99% {
-//       opacity: 1;
-//     }
-//     // Other opacity keyframes...
-//   }
-
-//   &.window-2{
-//     top: 65%;
-//     right: 16%; 
-//   }
-//   &.window-3{
-//     top: 25%;
-//     left: 16%; 
-//   }
-//   &.window-4{
-//     top: 25%;
-//     right: 16%; 
-//   }
-//   &.window-5{
-//     top: 25%;
-//     left: 44%; 
-//   }
-// } // End .window
-
-// .door{
-//   position: absolute;
-//   top: 65%;
-//   left: 44%; //35+9=44
-//   width: 14%; //32-14=18, 18/2=9
-//   height: 35%;
-//   background: $door;
-// }
-
-// .roof{
-//   position: absolute;
-//   top: 49%;
-//   left: 35%;
-//   width: 32%;
-//   height: 15%;
-//   background: $roof;
-//   border-top: 5px solid white;
-  
-//   // with clippy tool
-//   -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
-//   clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
-// }
-
-// .chimney{
-//   position: absolute;
-//   top: 32%;
-//   left: 72%;
-//   width: 6%;
-//   height: 35%;
-//   background: $mountains;
-//   border-top: 3px solid white;
-// } 
-
-// .sun{
-//   position: absolute;
-//   top: -20%;
-//   left: 42%;
-//   width: 60%;
-//   height: 65%;
-//   background: $sun;
-//   border-radius: 45%;
-// }
-
-// .tree{
-//   position: absolute;
-//   height: 8%;
-
-//   // This clip-path is likely incorrect for the main tree container, 
-//   // but we'll leave it as you defined it.
-//   -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
-//   clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
-  
-//   &.star{
-//     top: 45%;
-//     left: 79%;
-//     width:6%;
-//     background:$star;
-//     border-top: 6px solid white;
-
-//     // star is it is from the clippy tool
-//     -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-//     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-//   }
-
-//   // trunk 
-//   &.tree-down{
-//     top: 92%;
-//     left: 79%;
-//     width:6%;
-//     background:$mountains;
-//   }
-  
-//   &.tree-0{
-//     top: 50%; 
-//     left: 79%;
-//     width: 6%;
-//     background:rgba(220,237,200 ,0.5);
-//     -webkit-animation: tree-0 3s 1s ease-in-out infinite both;
-//     animation: tree-0 3s 1s ease-in-out infinite both;
-//   }
-
-//   @keyframes tree-0{
-//     0%,
-//     50%,
-//     100% {
-//       opacity: 1;
-//     }
-//     25%,
-//     75% {
-//       opacity: 0;
-//     }
-//   }
-
-//   &.tree-1{
-//     top: 57%; 
-//     left: 78%;
-//     width: 8%;
-//     background:rgba(220,237,200 ,0.6);
-//   }
-//   &.tree-2{
-//     top: 64%; 
-//     left: 77%;
-//     width: 10%;
-//     background:rgba(174,213,129 ,0.6);
-//   }
-//   &.tree-3{
-//     top: 71%; 
-//     left: 76%;
-//     width: 12%;
-//     background:rgba(139,195,74 ,0.6);
-//   }
-//   &.tree-4{
-//     top: 78%; 
-//     left: 75%;
-//     width: 14%;
-//     background:rgba(104,159,56 ,0.6);
-//   }
-//   &.tree-5{
-//     top: 85%;
-//     left: 74%;
-//     width: 16%;
-//     background:rgba(51,105,30 ,0.6);
-//   }
-// } // End .tree
-
-// // You may need to add styles for the human here later
-
-
+ 
