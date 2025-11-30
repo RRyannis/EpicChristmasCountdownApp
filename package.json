@@ -1,0 +1,25 @@
+{
+  "name": "epicchristmascountdown",
+  "version": "1.0.0",
+  "description": "\"# EpicChristmasCountdownApp\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass styles/main.scss:styles/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RRyannis/EpicChristmasCountdownApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/RRyannis/EpicChristmasCountdownApp/issues"
+  },
+  "homepage": "https://github.com/RRyannis/EpicChristmasCountdownApp#readme",
+  "devDependencies": {
+    "sass": "^1.94.2"
+  }
+}
